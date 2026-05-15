@@ -104,7 +104,7 @@ if (botaoResolver && inputConta && resultadoConta) {
             const conta = inputConta.value;
             const resultado = eval(conta);
 
-            resultadoConta.innerText = "Resultado: ${resultado}";
+            resultadoConta.innerText = `Resultado: ${resultado}`;
 
         } catch {
             resultadoConta.innerText = 'Conta inválida';
