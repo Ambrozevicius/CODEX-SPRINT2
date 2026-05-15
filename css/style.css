@@ -1,0 +1,180 @@
+
+/* CAMERA */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.celular-container {
+    width: 360px;
+    height: 740px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 8px solid #222;
+}
+
+
+.camera-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px; 
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    padding: 0 10px;
+}
+
+.camera-header i {
+    font-size: 1.5rem; 
+    display: flex;
+    align-items: center;
+}
+
+.camera-header a {
+    text-decoration: none;
+    display: flex; 
+}
+
+.camera-header .botao-icone {
+    font-size: 1.1rem; 
+    font-weight: bold;
+}
+
+.botao-icone {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+.foto-camera {
+    flex-grow: 1;
+    background-image: url('https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?q=80&w=1000');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.foto-camera-selfie {
+    flex-grow: 1;
+    background-image: url('https://img.freepik.com/fotos-premium/mulher-jovem-turista-fazendo-selfie-foto-com-a-torre-eiffel-ao-fundo-em-dia-ensolarado-em-paris-franca_63239-4925.jpg?w=2000');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.botao-funcao-mat {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+
+.camera-footer {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.modos-camera {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+}
+
+.link-modo {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.link-modo-ativo {
+    color: #ffd700; 
+    font-weight: bold;
+}
+
+
+.secao-foto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.botao-foto {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid #444;
+    cursor: pointer;
+}
+.flip-camera {
+    width: 50px;  
+    height: 50px; 
+    border-radius: 50%;
+    border: none; 
+    background: black; 
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.galeria img {
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor:not-allowed
+}
+
+
+.barra-navegacao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0 20px 0; 
+    color: white;
+    font-size: 1.4rem;
+    
+}
+
+.barra-navegacao span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: not-allowed;
+}
