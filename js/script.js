@@ -59,3 +59,31 @@ if (botaoGravar) {
 
     document.body.appendChild(contador);
 }
+
+/* Toggle tela Config */
+
+const toggles = document.querySelectorAll('.caixa-alternar');
+
+if (toggles.length > 0) {
+    toggles.forEach(btn => {
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('ativo');
+        });
+    });
+}
+
+/* Contador da gravação */
+
+if (botaoGravar) {
+
+    const contador = document.createElement('p');
+    contador.innerText = '00:00';
+    contador.style.color = 'red';
+    contador.style.fontWeight = 'bold';
+    contador.style.position = 'absolute';
+    contador.style.top = '20%';
+    contador.style.left = '49%';
+    contador.style.display = 'none';
+
+    document.body.appendChild(contador);
+}
