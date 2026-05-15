@@ -87,3 +87,27 @@ if (botaoGravar) {
 
     document.body.appendChild(contador);
 }
+
+// Função Matemática: JOVIStudAI
+
+const inputConta = document.querySelector('.input-conta');
+const resultadoConta = document.querySelector('.resultado-conta');
+const botaoResolver = document.querySelector('.botao-resolver');
+
+if (botaoResolver && inputConta && resultadoConta) {
+
+    botaoResolver.addEventListener('click', () => {
+
+        try {
+            alert("Na nossa feature, a ideia era a própria câmera entender o calculo e calcular, aqui está sendo manual mesmo")
+
+            const conta = inputConta.value;
+            const resultado = eval(conta);
+
+            resultadoConta.innerText = `Resultado: ${resultado}`;
+
+        } catch {
+            resultadoConta.innerText = 'Conta inválida';
+        }
+    });
+}
