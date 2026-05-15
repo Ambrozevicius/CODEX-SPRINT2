@@ -35,3 +35,27 @@ if (botaoFoto) {
         }, 150);
     });
 }
+
+
+
+// sistema de gravacao de video
+const botaoGravar = document.querySelector('.modo-video');
+
+let gravando = false;
+let segundos = 0;
+let intervalo;
+
+//Contador da gravação
+if (botaoGravar) {
+
+    const contador = document.createElement('p');
+    contador.innerText = '00:00';
+    contador.style.color = 'red';
+    contador.style.fontWeight = 'bold';
+    contador.style.position = 'absolute';
+    contador.style.top = '20%';
+    contador.style.left = '49%';
+    contador.style.display = 'none';
+
+    document.body.appendChild(contador);
+}
