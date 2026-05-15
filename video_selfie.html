@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Codex - Vídeo</title>
+    
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="celular-container">
+       
+        <header class="camera-header">
+            <a href="configuracoes.html">
+                <i class="bx bx-cog" style="color:#ffffff;"></i>
+            </a>
+
+            
+            <div class="header-center-spacer"></div>
+
+            <button class="botao-icone icone-fhd toggle-camera">FHD 60</button>
+            
+            <button class="botao-icone">
+                <i class="bx bx-bolt toggle-camera" style="color:#ffffff;"></i>
+            </button>
+        </header>
+
+        
+        <main class="foto-camera-selfie">
+            <div class="popup-qualidade" id="popupQualidade">
+                <div class="popup-container">
+                    <h3>Qualidade</h3>
+                    <div class="grade-qualidade">
+                        <button onclick="mudarQualidade('8K')">8K</button>
+                        <button onclick="mudarQualidade('4K')">4K</button>
+                        <button class="ativo" onclick="mudarQualidade('FHD 60')">FHD</button>
+                        <button onclick="mudarQualidade('HD')">HD</button>
+                    </div>
+                    <h3>FPS</h3>
+                    <div class="grade-fps">
+                        <button class="ativo">30</button>
+                        <button>60</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        
+        <footer class="camera-footer">
+            <section class="modos-camera">
+                <span class="link-modo-ativo">Vídeo</span>
+                <a href="Selfie.html" class="link-modo">Foto</a>
+                <a href="mais.html" class="link-modo">Mais</a>
+            </section>
+
+            <section class="secao-foto">
+                <div class="galeria">
+                    <img src="https://picsum.photos/45/45" alt="galeria">
+                </div>
+                
+                
+                <button class="botao-foto modo-video"></button>
+                
+                <a href="video.html" class="flip-camera">
+                    <i class="bx bx-rotate-ccw" style="color:#ffffff;"></i>
+                </a>
+            </section>
+
+            <nav class="barra-navegacao">
+                <span><i class="bx bx-menu"></i></span>
+                <span><i class="bx bx-square"></i></span>
+                <span><i class="bx bx-chevron-left"></i></span>
+            </nav>
+        </footer>
+    </div>
+
+<script src="./js/script.js"></script>
+
+</body>
+</html>
