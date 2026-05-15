@@ -178,3 +178,119 @@ body {
     align-items: center;
     cursor: not-allowed;
 }
+
+
+
+/* Video */
+.icone-fhd {
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 1.5px solid white;
+    padding: 2px 5px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.toggle-camera.ativo {
+    background-color: #ffd9002a;
+    color: yellow;
+    
+}
+
+.espaco-header {
+    flex-grow: 1;
+}
+
+
+.botao-foto.modo-video {
+    background-color: #ff0000;
+    border: 5px solid white;   
+    position: relative;
+}
+
+
+.botao-foto.modo-video::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    display: none; 
+}
+
+
+.modos-camera.active {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+
+
+.popup-qualidade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: none; 
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 80px;
+    z-index: 100;
+}
+
+.popup-qualidade.show {
+    display: flex; 
+}
+
+.popup-container {
+    width: 90%;
+    background: rgba(30, 30, 30, 0.8);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 20px;
+    color: white;
+}
+
+.popup-container h3 {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+.grade-qualidade, .grade-fps {
+    display: flex;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.grade-qualidade button, .grade-fps button {
+    flex: 1;
+    background: none;
+    border: none;
+    color: #999;
+    padding: 10px 0;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.grade-qualidade button.ativo, .grade-fps button.ativo {
+    background: #333;
+    color: #ffd700; 
+}
+
+.grade-qualidade button:hover {
+    color: white;
+}
