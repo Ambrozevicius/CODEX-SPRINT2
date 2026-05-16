@@ -155,3 +155,37 @@ if (botaoResolver && inputConta && resultadoConta) {
         }
     });
 }
+
+
+// pop up qualidade da imagem e troca de imagem com o clique 
+const botaoFHD = document.querySelector('.icone-fhd');
+const popup = document.getElementById('popupQualidade');
+
+if (botaoFHD && popup) {
+
+    botaoFHD.addEventListener('click', () => {
+        popup.classList.toggle('show');
+    });
+}
+
+window.mudarQualidade = function(valor, event) {
+    botaoFHD.innerText = valor;
+
+    popup.classList.remove('show');
+
+    const botoes = document.querySelectorAll('.grade-qualidade button');
+
+    botoes.forEach(btn => {
+        btn.classList.remove('ativo');
+    });
+
+    if (event) {
+        event.target.classList.add('ativo');
+    }
+}
+
+popup.addEventListener('click', (e) => {
+    if (e.target === popup) {
+        popup.classList.remove('show');
+    }
+});
