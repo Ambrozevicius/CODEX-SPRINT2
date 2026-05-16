@@ -135,8 +135,8 @@ if (botaoGravar) {
 // Função Matemática: JOVIStudAI
 
 const inputConta = document.querySelector('.input-conta');
-const resultadoConta = document.querySelector('.resultado-conta');
-const botaoResolver = document.querySelector('.botao-resolver');
+const resultadoConta = document.querySelector('.resultadoconta');
+const botaoResolver = document.querySelector('.botao-funcao-mat');
 
 if (botaoResolver && inputConta && resultadoConta) {
 
