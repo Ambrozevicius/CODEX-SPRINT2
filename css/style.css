@@ -439,3 +439,95 @@ body {
     align-items: center;
     padding-top: 40px;
 }
+
+/* Tela Login */
+
+.login-bg {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), 
+    url('https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?q=80&w=1000');
+    background-size: cover;
+    background-position: center;
+    justify-content: space-around;
+}
+
+.login-header {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.login-header i { font-size: 2.5rem; margin-bottom: 10px; color: #ffd700; }
+.login-header h1 { font-size: 1.5rem; font-weight: 500; }
+.login-header p { font-size: 0.9rem; opacity: 0.8; margin-top: 5px; }
+
+
+.tela-pin   {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.ponto {
+    width: 14px;
+    height: 14px;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    transition: background 0.2s;
+}
+
+.ponto.cheio {
+    background-color: white;
+}
+
+
+.teclado-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.teclado {
+    display: flex;
+    flex-wrap: wrap; 
+    width: 280px;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.chave {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.2s;
+}
+
+.chave:active {
+    background: rgba(255, 255, 255, 0.4); 
+}
+
+.chave.transparente { background: transparent; cursor: default; }
+
+.chave-acao { font-size: 1.2rem; background: transparent; }
+
+.login-footer {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.botao-emergencia {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+}

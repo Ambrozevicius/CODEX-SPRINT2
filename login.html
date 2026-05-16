@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codex - Login</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="celular-container login-bg">
+        <header class="login-header">
+            <i class='bx bx-lock-alt'></i>
+            <h1>Digite o PIN</h1>
+            <p>Para acessar a Camera Codex</p>
+        </header>
+
+        <div class="tela-pin    ">
+            <div class="ponto"></div>
+            <div class="ponto"></div>
+            <div class="ponto"></div>
+            <div class="ponto"></div>
+        </div>
+
+        <main class="teclado-container">
+            <div class="teclado">
+                <button class="chave" onclick="addNumber('1')">1</button>
+                <button class="chave" onclick="addNumber('2')">2</button>
+                <button class="chave" onclick="addNumber('3')">3</button>
+                <button class="chave" onclick="addNumber('4')">4</button>
+                <button class="chave" onclick="addNumber('5')">5</button>
+                <button class="chave" onclick="addNumber('6')">6</button>
+                <button class="chave" onclick="addNumber('7')">7</button>
+                <button class="chave" onclick="addNumber('8')">8</button>
+                <button class="chave" onclick="addNumber('9')">9</button>
+                <div class="chave transparente"></div> 
+                <button class="chave" onclick="addNumber('0')">0</button>
+                <button class="chave chave-acao" onclick="deleteNumber()">
+                    <i class='bx bx-backspace'></i>
+                </button>
+            </div>
+        </main>
+
+        <footer class="login-footer">
+            <button class="botao-emergencia">Emergência</button>
+        </footer>
+    </div>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
